@@ -1,0 +1,25 @@
+Singleton Pattern
+
+By Purpose: Creational
+By Scope: Object
+
+Examples:
+    - One FileSystem, Window Manager
+
+Issues:
+    - Multiple classes require the same object instance
+    - There can only be one object fir the entire application
+    - It must be guaranteed that there is only one object
+
+Solution:
+    - Let class menage its one instance
+
+Intent:
+    - Ensure a class only has one instance, and provide a global point of access to it
+
+When:
+    - Only one instance of class required
+    - Must be one access point
+    - Need to menage object instances (eg. db pool)
+
+
