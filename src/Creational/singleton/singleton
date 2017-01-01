@@ -22,4 +22,18 @@ When:
     - Must be one access point
     - Need to menage object instances (eg. db pool)
 
+Benefits:
+    - Controlled access to one instance
+    - Reduce name space -> avoids global variables
+    - The ability to subclass the singleton class
+    -Configure the number of instances you need
 
+Drawbacks:
+    - State of the singleton must be shareable between program executions
+    - If we have multiple threads, the instance must be shareable between threads
+
+
+Conclusion:
+Singleton pattern is great for:
+    - Manage number of instances at runtime
+    - Provide single unique point of access

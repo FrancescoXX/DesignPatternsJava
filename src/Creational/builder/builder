@@ -1,0 +1,36 @@
+Builder Pattern
+
+By Purpose: Creational
+By Scope: Object
+
+Examples:
+
+
+Issues:
+    - Search screen results in three objects (eg 3 databases, one for each db)
+    - Need to construct the three objects over and over again (same set of code)
+
+Future proof:
+    - Ideally we would like to support a fourth database without changing too much code
+
+Intent:
+    - Separate the constructor of a complex object from its representation so that
+      the same construction process can create different representations
+
+When:
+    - Separate constructor with internal representation
+    - One process -> multiple object representation
+    - Object construction <> object assembling
+
+Benefits:
+    - Uniform production creation with an interface
+    - Abstract building process
+    - Loose coupling
+        - Construction
+        - Representation
+    - Finer control on the build process -> Allow multiple steps
+
+Conclusion:
+Builder pattern is great for:
+    - One build process for multiple similar objects
+    - Advance control over the build process
