@@ -5,7 +5,7 @@ package Creational.singleton;
  */
 
 /**
- * A Class extending A singleton is also a singleton
+ * A Class extending A factorymethod is also a factorymethod
  */
 public class MyManager extends Manager {
 }

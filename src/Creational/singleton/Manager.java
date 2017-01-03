@@ -10,7 +10,7 @@ package Creational.singleton;
  *  Procedure:
  *  1-store Unique Instance
  *  2-getInstance is the only way to retrieve the instance
- *  3-Create the singleton instance
+ *  3-Create the factorymethod instance
  */
 public class Manager {
 
@@ -20,13 +20,13 @@ public class Manager {
     private static Manager instance = null;
 
     /**
-     * Protected Manager constructor so no other classes can instantiate a singleton
+     * Protected Manager constructor so no other classes can instantiate a factorymethod
      * Can also be private
      */
     protected Manager() {}
 
     /**
-     * Create a singleton instance if it doesn't exist
+     * Create a factorymethod instance if it doesn't exist
      * @synchronized to allow only one instance when using multiple threads
      */
     private synchronized static void createInstance () {
@@ -36,8 +36,8 @@ public class Manager {
     }
 
     /**
-     * Access method to get hold of singleton instance
-     * @return the one singleton instance, create a new one only if it doesn't exist
+     * Access method to get hold of factorymethod instance
+     * @return the one factorymethod instance, create a new one only if it doesn't exist
      */
     public static Manager getInstance(){
         if (instance == null) {
@@ -50,6 +50,6 @@ public class Manager {
      * replace with Manager method
      */
     public void helloSingleton(){
-        System.out.println("Hello i'm a singleton");
+        System.out.println("Hello i'm a factorymethod");
     }
 }
