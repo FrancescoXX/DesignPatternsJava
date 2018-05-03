@@ -1,0 +1,42 @@
+Inversion Of Control Pattern (delegate creation to another system)
+"Object releases control of the creation process"
+"Objects let other systems/objects decide what they need"
+
+Gives at runtime the instance we need
+
+
+Dependency Injection:
+    - Let one object pass a dependent object to another object
+
+IoC Container Resonsabilities:
+    - Creates new objects
+    - Responsible for linking objects together (eg create a Query object)
+    - Link the Query object wth the correct DatabaseAccess object
+
+Intent:
+    Allow a system to release control of object creation by allowing other components to menage creation of objects
+    and its dependecies
+
+When:
+    - Don't know in advance which objects need to be created
+    - Need a flexible run-time environment that can be configured
+    - Creation of objects is difficult (e.g. in an enterprise context)
+    - Need loose coupling
+
+Structure:
+    - Concrete objects that requires a dependent object
+    - Dependent object Interface
+    - Concrete implementation of the dependent object
+    - Handling control of the dependencies
+
+Benefits:
+    - A fully configurable runtime system
+    - Increased loose coupling
+
+Drawbacks:
+    - Extra configuration is required for the DependencyControl
+
+Conclusion:
+    IoC is Great
+    - Implementing loose coupling
+    - Create a configurable runtime system
