@@ -7,3 +7,6 @@ Creational:
   - builder
   - factory method (virtual constructor)
   - abstract factory (kit)
+
+Behavioral:
+  - observer
