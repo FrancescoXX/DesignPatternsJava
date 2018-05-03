@@ -23,14 +23,14 @@ public class Client {
     public static void main(String[] args) {
 
         TransportFactory factory = new BikeFactory();
-        Transport transport = factory.create();
+        Transport transport = factory.create();  //creates a new Bike
         System.out.println(transport.drive());
 
         /**
          * Now lets change bike to car
          */
         factory = new CarFactory();
-        transport = factory.create();
+        transport = factory.create();           //creates a new Car
         System.out.println(transport.drive());
     }
 }

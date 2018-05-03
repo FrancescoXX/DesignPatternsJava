@@ -20,20 +20,10 @@ public class Manager {
     private static Manager instance = null;
 
     /**
-     * Protected Manager constructor so no other classes can instantiate a factorymethod
-     * Can also be private
+     * Protected Manager constructor so no other classes can instantiate it
+     * Can also be private. here is protected to let sublclasses extends it
      */
     protected Manager() {}
-
-    /**
-     * Create a factorymethod instance if it doesn't exist
-     * @synchronized to allow only one instance when using multiple threads
-     */
-    private synchronized static void createInstance () {
-        if (instance == null) {
-            instance = new Manager();
-        }
-    }
 
     /**
      * Access method to get hold of factorymethod instance
@@ -45,6 +35,18 @@ public class Manager {
         }
         return instance;
     }
+
+    /**
+     * Create a factorymethod instance if it doesn't exist
+     * @synchronized to allow only one instance when using multiple threads
+     */
+    private synchronized static void createInstance () {
+        if (instance == null) {
+            instance = new Manager();
+        }
+    }
+
+
 
     /**
      * replace with Manager method

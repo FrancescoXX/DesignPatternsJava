@@ -1,0 +1,50 @@
+Facade Pattern
+
+By Purpose: Structural
+By Scope: Object
+
+Examples:
+
+Issues:
+    - Client need to know the subsystem
+
+Solution:
+    - Client only know the Facade (easy to add another client
+    - Facade is part of the system
+    - Knows hows the system works
+
+Intent:
+    - Provide a unified interface to a set of interfaces in a subsystem. Facade defines a highr level interface
+      that makes the subsystem easier to use
+
+When:
+    - Decouple clients from subsystems
+    - provide simple interface
+    - Subsystem layering (business, data and client services)
+        EACH LAYER PROVIDE A FACADE TO THE OTHER LAYER
+
+Structure:
+    - We have a complex system with a lot of subcomponents
+    - Facade accesses the front to a subsystem access point
+    - Knows the system
+    - Delegates to subsystem
+    - Implement functionality ONLY IN THE SUBSYSTEM
+    - Doesent implemements functionality
+
+    Client -> Facade -> Subsystem
+    Facade needs to translate request into subsystem specific object
+
+Benefits:
+    - Cliens don't have access to the subsystem (Loose Coupling)
+    - Client don't require specific knowledge (easy to use)
+    - Loose Coupling
+    - Subsystem can still be used directly (if needed)
+
+Drawbacks:
+    - Facade introduces an extra programming layer
+
+Conclusion:
+Facade pattern is great for:
+    - Complex systems
+    - Abstract complex system from client
+    - Provide extra loose coupling
