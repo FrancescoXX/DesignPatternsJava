@@ -10,3 +10,7 @@ Creational:
 
 Behavioral:
   - observer
+  
+Extra:
+  - Inversion of Control
+  - Data Transfer Object (DTO)

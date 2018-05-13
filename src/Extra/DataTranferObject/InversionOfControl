@@ -1,0 +1,27 @@
+Data Transfer Object (DTO)
+
+
+Intent:
+    Bundle the required data that must be tranferred from one process to another
+
+When:
+    Reduce process interaction overhead
+    - result in network transfer reduction
+    - Avoid transferring extra unwanted data, that may be the result of interface design
+
+Structure:
+    - data
+    - getData()
+    - setData()
+
+Benefits:
+    - when correctly applied it gives you a performance boost
+    - You can limit the need to know data
+
+Drawbacks:
+    - Creating and maintaining transfer objects
+
+Conclusion:
+    Data Tranfer Object is great
+    - Focus on data that must be transferred
+    - Improve data transfer of service oriented applications
