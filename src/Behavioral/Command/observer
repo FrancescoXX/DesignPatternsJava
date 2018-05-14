@@ -1,0 +1,40 @@
+Command (Capture Actions, Action, Transaction)
+
+By Purpose: Behavioral
+
+Intent:
+    Encapsulate a request as an object, thereby letting you parametrize clients with different requests
+    , queue or log requests, and support undoable operations
+
+When:
+    - Command as a parameter
+    - Pass command like general object
+    - Queue Request
+    - Save request state
+    - Undo functionality
+    - Provide an execute and undo method
+    - Support logging
+    - Re-execute code in case of failure
+
+
+Structure:
+    - Command interface
+    - Concrete implemementation
+    - Invoker of the command
+    - Receiver: Performs the actual command
+    - Client: links to the receiver (document)
+
+Benefits:
+    - Decoupling between:
+        - object that invokes the operation
+        - object that knows how to perform it
+    - Commands are Objects
+        - all OO  rules apply to them
+    - Creating new Command is easy
+        - just add a new class
+
+Conclusion:
+
+Command pattern is great for:
+    - Capture a request
+    - Centralize action functionality

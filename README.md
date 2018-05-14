@@ -9,7 +9,8 @@ Creational:
   - abstract factory (kit)
 
 Behavioral:
-  - observer
+  - Command
+  - Observer
   
 Extra:
   - Inversion of Control
