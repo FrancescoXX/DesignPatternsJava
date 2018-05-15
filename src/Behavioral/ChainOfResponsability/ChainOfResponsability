@@ -1,0 +1,28 @@
+Chain Of Responsibility (Decouple sender and receiver)
+
+Intent
+    Avoid coupling the sender of a request to its receiver by giving more than one object a change o handle the request.
+    Chain the receiving objects and pass the request along the chain until an object handles it
+
+When
+    Multiple objects need to handle a request
+    isn't clear upfront who will handle it
+    who can handle the request should be dynamic
+
+Structure
+    Interface for handling requests, keep successors list
+    Different handlers implementations
+    Client invokes the first handler
+
+Benefits
+    Loose coupling between requester and receiver
+    Objects can spread responsibility in handling requests
+
+Drawbacks:
+    No guarantee the request will be handled
+
+Conclusion
+    CoR is great:
+    Handle requests dynamically
+    Enhanced loose coupling between sender and receiver
+
