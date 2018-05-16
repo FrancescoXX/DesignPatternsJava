@@ -1,0 +1,28 @@
+Decorator (Dynamically add responsibility) (Wrapper)
+
+Intent
+    Attach additional responsibility to an object dynamically. Decorators provide a flexible alternative
+    to subclassing for extending functionality
+
+When
+    Add functionality to objects, without affecting other objects
+    Functionalities can be taken away in the futute
+    Extension by subclassing is difficult
+
+Structure
+    - Base component to add behaviour
+    - Standard concrete Component -> No added functionality
+    - Decorator: refers tot he component it wants to decorate
+    - Add decorator behaviour or State
+
+Benefits
+    More flexible than inheritance
+    Implement functionality when you need it
+     Where you need it in the class hierarchy
+
+Drawbacks
+    Object identity cannot be used with decorators (warning when using with databases!)
+    Too many small decorator objects
+
+Decorator pattern is great:
+    Add behavior to objectsHigher flexibility than extension
