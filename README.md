@@ -13,6 +13,7 @@ Behavioral:
   - Command
   - Observer
   - Chain of Responsibility
+  - Decorator
   
 Extra:
   - Inversion of Control
