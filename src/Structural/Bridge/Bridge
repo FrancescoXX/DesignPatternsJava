@@ -1,0 +1,33 @@
+Bridge (Decouple abstraction from implementation)
+Also known as: Handle, Body
+
+By Purpose: Structural
+
+Examples:
+
+Issues:
+    Create a multiplatform window toolkit
+
+Intent:
+    Decouple an abstraction from its implementation so that the two can vary indipendently
+
+When:
+    Avoid binding between interface and implementation
+    Possible subclasses for abstraction and implementation
+    Must be possible to change implementation at runtime without affecting clients
+
+Structure:
+    Define abstraction interface
+    Maintain reference to implementer
+    Implementor define operation implementation methods
+    Multiple subclassing
+
+Benefits:
+    Decouple interface and implementation
+    improve extensibility
+    hide implementation details
+
+Conclusion:
+    Bridge pattern is great to :
+        decouple interface from implementation
+        reduce number of subclasses
