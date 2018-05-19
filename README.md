@@ -2,18 +2,24 @@
 
 Design Patterns Examples in Java. Work in progress
 
-Creational:
-  - Singleton
-  - Builder
-  - Factory method (virtual constructor)
-  - Abstract factory (kit)
-  - Prototype
-
 Behavioral:
+  - Chain of Responsibility
   - Command
   - Observer
-  - Chain of Responsibility
+
+Creational:
+  - Abstract factory (kit)
+  - Builder
+  - Factory method (virtual constructor)
+  - Prototype
+  - Singleton
+
+Structural:
+  - Adapter
+  - Bridge
+  - Composite
   - Decorator
+  - Facade
   
 Extra:
   - Inversion of Control

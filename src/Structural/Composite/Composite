@@ -1,0 +1,43 @@
+Composite (Uniformly treat tree objects)
+
+
+
+By Purpose: Structural
+
+Problem:
+    Different treatment for Rectangle, Line and Group
+
+Solution:
+    Create a generic Graphic interface
+    Extend Graphic item
+    Group graphic item
+
+Issues:
+    Want to be able to groub objects in our graphi
+
+Intent:
+    Compose objects into tree structures to represent part-whole hierarchies.
+    Composite lets clients treat individual objects and compositions for objects uniformly
+
+When:
+    Ignore dirrencies between compositions and individual items
+    Represent part-whole hierarchies of objects
+
+Structure:
+    Interface for composed objects
+    Impl for default behaviour
+    Leaf: has no children and implements behaivour
+    Comosite: links to other components
+
+Benefits:
+    Define class hierarchies of consistent objects
+    Client is simplifed: no distinction between child and composite objects
+    Easy to add new components
+
+Drawbacks
+    Can be hard for new components with different expectations
+
+Conclusion:
+    Composite pattern is great
+        Represent part-whole hierarchies of objects
+        Abstraction from client
