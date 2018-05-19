@@ -1,0 +1,46 @@
+Proxy Pattern(Placeholder for objects)
+Also known as a surrogate
+
+By Purpose: Structural
+
+Example:
+    Remote proxy (access network separated classes)
+    Virtual proxy (create expensive objects on demand)
+    Protection proxy (access management)
+    Added functionality e.g. count number of references
+
+Issues:
+    Render some images before they are all loaded into system
+    Application requires images
+    Pre-Loads out of the box
+    Takes too much time to load all images out of the box
+
+Solution:
+    Use a proxy: Loads images when drawing is requested
+
+Intent:
+    Provide a surrogate or placeholder for another object to control access to it
+
+When:
+    Extra functionality is required
+        transparency
+        More than just a reference
+
+Structure:
+    Subject we want to proxy: common interface for subjects
+    Proxy:
+        Implements subject interface
+        Keeps references to RealSubject
+        Control Access
+
+Consequencies
+    Adds indirection
+
+Benefits:
+    Remote proxy
+    Virtual proxy
+    Smart references
+
+Conclusion:
+    Proxy pattern is great:
+        Transparently add functionality

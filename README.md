@@ -20,6 +20,7 @@ Structural:
   - Composite
   - Decorator
   - Facade
+  - Proxy
   
 Extra:
   - Inversion of Control
