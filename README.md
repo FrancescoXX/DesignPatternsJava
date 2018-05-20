@@ -20,6 +20,7 @@ Structural:
   - Composite
   - Decorator
   - Facade
+  - Flyweight
   - Proxy
   
 Extra:
