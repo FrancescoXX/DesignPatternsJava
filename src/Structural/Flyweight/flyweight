@@ -1,0 +1,33 @@
+Flyweight Pattern(Efficently share objects)
+
+By Purpose: Structural
+
+Intent:
+    Use sharing to support large numbers of fine grained objects efficently
+
+When:
+    Large number of objects
+    High storage costs
+    Extrinct state (shareable)
+    Many objects -> replaced by few objects
+    Objects identify isn't necessary
+
+Structure:
+    Flyweight factory: each instance is created by the flyweight factory
+    Flyweight interface for a flyweight State is passed through
+    Unshared Flyweight
+    Concrete Flyweight
+    Client references same objects
+
+Benefits:
+    Reduce total number of instances
+    Share intrinsic state per objects
+
+Drawbacks:
+    Factory needs to manage shared instances -> Runtime overhead
+
+Conclusion:
+    Use with Composite -> Leaf nodes as flyweight
+    Flyweight pattern is great
+        improve performance
+        manage objects efficently
