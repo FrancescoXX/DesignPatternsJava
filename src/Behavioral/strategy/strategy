@@ -1,0 +1,48 @@
+Strategy (Encapsulate an algorithm)
+know as a Policy
+
+By Purpose: Behavioral
+
+Problem:
+    For chess application need to be able to set the difficulty
+    Define multiple algorithms to define to create AI
+    it needs to be easily changed
+    No other code should be adapted in changing the algorithm
+    Programming algorithms into general application classes,
+    more complex if algorithm grows
+    difficult to mantain
+
+Solution
+    Create an extra interface, specific methods, different implementations
+
+Intent:
+    Define a family of algorithms, encapsulate each one, and make, them interchangeable.
+    Strategy lets the algorithm vary independently from clients that uses it
+
+When:
+    Classes only change in behavior
+    different variants of an algorithm
+    algorithms that use complex data that clients shouldn't be aware of
+
+Structure:
+    Base interface for all algorithms
+    a set of strategies clients can use (A,B,C,...) switchable at runtime
+    Each implementation is an implementation of a concrete algorithm
+
+Collaboration:
+    Context can pass necessary data to strategy
+    Clients of the context can pass a strategy
+    Context forwards clients requests to the strategy
+
+Benefits:
+    Algorithm families use inheritance for common parts
+    Avoid conditional statements using this pattern
+    Clients can choose the required behavior
+
+Drawbacks:
+    Pattern increases number of objects in application
+        share strategies betweeen objects
+
+Conclusion: Strategy pattern is great for:
+    Encapsulate an algorithm
+    Change algorithm at runtime
