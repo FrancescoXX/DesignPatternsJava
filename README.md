@@ -6,6 +6,8 @@ Behavioral:
   - Chain of Responsibility
   - Command
   - Observer
+  - Strategy
+  - Visitor
 
 Creational:
   - Abstract factory (kit)

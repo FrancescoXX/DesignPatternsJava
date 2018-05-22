@@ -1,0 +1,53 @@
+Visitor (Visit Tree Nodes)
+
+By Purpose: Behavioral
+
+Problem:
+    3D car Simulation.
+    Want to print and render cars in simulation program
+    Car which contains parts, extension of generic car implementation
+    Multiple implementations
+    Want to print car details
+    Render car details
+    Upgrade car parts
+
+Solution
+    Introduce a car visitor to visit concrete elements
+    Each functionality its implemented as extension of car visitor
+    method accept() to accept the car visitor
+    CarPart accepts a visitor
+    Different visotr implementation for each part
+
+Intent:
+    Represent an operation to be performed on the elements of an object structure.
+    Visitor lets you define a new operation without changing the classes of the elements on which it operates
+
+When:
+    Visit complex structure (inheritance)
+        Perform operations based upon concrete classes
+    Avoid pollution of concrete classes with many different operation with many different operation
+        Visitor groups this functionality
+    Ability to easily define new operations without changing concrete classes
+
+Structure:
+    Base visitor class: One operation per concrete element
+    Each extension of the visitor its implementing specific functionality for a specific set
+    Element accept a visitor
+    Each concrete element also accept visitor, calling the specific visitor method for the class
+
+Collaboration:
+
+
+Benefits:
+    Adding new operations is easy
+    visitor separates operations that don't belong together
+    accumulate state: visitors can mantain state across the hierarchy
+
+Drawbacks:
+    Adding a new concrete element is hard
+    Requires a new method for all concrete visitors
+    Visitor breaks encapsulation: they rely on the interface of the concrete element
+
+Conclusion: Visitor pattern is great for:
+    Visit complex object structure
+    Centralize logic
