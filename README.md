@@ -7,6 +7,7 @@ Behavioral:
   - Command
   - Observer
   - Strategy
+  - Template
   - Visitor
 
 Creational:

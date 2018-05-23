@@ -1,0 +1,40 @@
+Template (Algorithm skeleton)
+
+By Purpose: Behavioral
+
+Problem:
+    Help developers to only focus on the new functionality to implement for our document framework
+    Each document has the same issue: save, open, close, read
+    This lifecycle returns for each document
+    Need to implement it again?
+
+Solution
+    Define interface for clients and refers to its state
+    Only implement specific new functionality when needed
+    Use abstract method language features
+
+Intent:
+    Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
+    Template Methods lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure
+
+When:
+    Implement an algorithm once
+    Subclasses can provide different implementation
+    Avoid code duplication
+    Define how a class should be extended
+    Implementing hooks
+
+Structure:
+    Define abstract class with primitive operations
+    Implement primitive operations
+    Define generic template method
+
+Benefits:
+    Ultimate code reuse
+    important for class libraries
+    Provide hooks
+    The abstract class genrally doesen't implement a hook -> forces clients to have an implementation
+
+Conclusion: Strategy pattern is great for:
+    Heavily re-use code
+    Provide hooks
