@@ -5,6 +5,7 @@ Design Patterns Examples in Java. Work in progress
 Behavioral:
   - Chain of Responsibility
   - Command
+  - Memento
   - Observer
   - Strategy
   - Template
