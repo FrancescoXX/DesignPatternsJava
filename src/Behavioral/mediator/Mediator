@@ -1,0 +1,42 @@
+Mediator (Define object interaction)
+Also knows as
+
+By Purpose: Behavioral
+
+Problem:
+    Stuck with the implementation of a screen
+    Generic widget interface
+
+Solution
+    Create a Screen director
+    Each Screen has a Screen director Implementation
+    Loose Coupling between List and InputText
+
+Intent:
+    Define an object that encapsulate how a set of objects interact.
+    Mediator promotes loose coupling by keeping objects from referring to each other explicitly,
+    and lets you vary their interaction independently
+
+When:
+    Objects have a complex way to communicate, but it's well defined
+    Hard to identify how the communication actually works
+    Object re-use is difficult
+        These objects require a set of different objects (waterfall of dependencies)
+    Centralize behavior between classes
+
+Structure:
+    Mediator: Interface for communicating with colleagues
+    Colleague: define object which wants to have communication
+    ConcreteMediator: References all the necessary colleagues
+
+Benefits:
+    Centralize behaviour
+        would otherwise be distributed among other objects
+    Decoupling of colleagues
+    Changes many-to-many interaction to one-to-many interaction
+    Object collaboration is abstracted
+    Centralized control
+
+Conclusion: Mediator pattern is great for:
+    Centralize behavior and control
+    Loose coupling between colleagues
