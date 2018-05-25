@@ -1,0 +1,57 @@
+State (Change behavior based on state)
+Also known as Object for states
+Encapsulate behavior in an object
+
+By Purpose: Behavioral
+
+Problem:
+    Build a networking framework
+    TCP Connection (way 2 system can communicate)
+    Different states: Open, closed, acknowledge
+    The behavior is different in each state
+    e.g. only open connection can be closed
+    Should we keep the state and it's implementation on the TCP Connection class itself?
+
+Solution:
+    Extract different states on each specific object
+    Define operations possible in each state
+    The states represent different states of the connection
+    Define different states
+    In each case each functionality will be different
+    Delegate state behavior to a state object
+
+Intent:
+    Allow an object to alter its behavior when its internal state changes.
+    The object will appear to change its class
+
+When:
+    Object behavior depends on object sstate
+    Avoid complex if-else structures.
+        When state changes, simplt change the state object
+        Implementation is done in the state object
+
+Structure:
+    Context: Define interface for clients and refers to its state
+    Interface for defining the behavior associate to specific state
+    Each Implementation is an extension form the State and implements behavior for a specific state
+
+Collaboration:
+    ALl state behavior is delegated to the state implementation
+    Arguments can be past from context to state
+    Only context is available for clients to see
+    Which stae is next?
+        can be decided by the Context or ConcreteStateImpl
+
+Benefits:
+    State related behavior is centralized
+    State transitions are explicit -> state object must be changed
+    State changes can be atomic -> only one variable in the Context
+
+Drawbacks:
+    State object must be shareable (can choose too)
+
+Conclusion: State pattern is great for:
+    Centralize state behavior
+    Reduce complexity due to state
+
+

@@ -8,6 +8,7 @@ Behavioral:
   - Mediator
   - Memento
   - Observer
+  - State
   - Strategy
   - Template
   - Visitor
