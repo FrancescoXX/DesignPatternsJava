@@ -1,27 +1,21 @@
 package Creational.singleton;
 
 /**
- * Created by FrancescoXX
- */
-
-/**
  * SINGLETON PATTERN EXAMPLE IN JAVA
  *
  *  Procedure:
  *  1-store Unique Instance
  *  2-getInstance is the only way to retrieve the instance
- *  3-Create the factorymethod instance
+ *  3-Create the singleton instance
  */
 public class Manager {
 
-    /**
-     * Unique instance
-     */
+    //Unique instance
     private static Manager instance = null;
 
     /**
      * Protected Manager constructor so no other classes can instantiate it
-     * Can also be private. here is protected to let sublclasses extends it
+     * Can also be private. here is protected to let subclasses extends it
      */
     protected Manager() {}
 
@@ -46,12 +40,10 @@ public class Manager {
         }
     }
 
-
-
     /**
      * replace with Manager method
      */
     public void helloSingleton(){
-        System.out.println("Hello i'm a factorymethod");
+        System.out.println("Hello i'm a singleton");
     }
 }
